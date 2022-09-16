@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Finalizar compra</h1>
+        <form action="url_para_enviar_dados_do_formulario" method="post"></form>
+<fieldset>
+    <h2>Endereço para entrega</h2>
+    <div class="input-duplo">
+
+    <div>
+        <label for="nome">Nome</label> <span>*</span><label>
+        <input type="text" name="nome" id="nome" required>
+    </div>
+    <div>
+        <label for="sobrenome">Sobrenome</label> <span>*</span><label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+    </div>
+</div>
+    <div class="input-simples">
+        <div>
+            <label for="endereco">Endereço</label> <span>*</span><label>
+            <input type="text" name="endereco" id="endereco" required> 
+        </div>
+    </div>
+    <div>
+    <div class="input-duplo">
+    </div>
+    <div>
+        <label for="cep">CEP</label> <span>*</span><label>
+        <input type="text" name="cep" id="cep" required>
+    </div>
+    <div>
+        <label for="pais">País</label>
+        <div class="select-wrapper">
+            <select name="pais" id="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="portugual">Portugual</option>
+                <option value="paraguai">Paraguai</option>
+            </select>
+        </div>
+    </div>
+    <h2>Opção de envio</h2>    
+        <div class="radio">
+            <input type="radio" name="opcao-envio" id="normal" value="normal">
+            <label for="normal">Normal</label>
+                <div class="radio">
+                    <input type="radio" name="opcao-envio" id="expresso" value="expresso">
+                    <label for="expresso">Expresso</label>
+                </div>
+        </div>
+    </div>
+<button type="submit">Enviar</button>
+</fieldset>
+    </body>
+</html>
